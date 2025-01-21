@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <header>
+    <!-- <div class="header"> -->
+        <h1>Header</h1>
+    <!-- </div> -->
+    </header>
+
+
+    <div>
+        <a href="index.html">Go back</a>
+        <h1>Forms input examples</h1>
+
+        <h3>Register</h3>
+
+        <form action="">
+
+            <fieldset>
+                <label for="">Username:</label>
+                <input type="text" placeholder="Enter your username" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Password:</label>
+                <input type="password" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Gender:</label>
+                <label for="">Male:</label>
+                <input type="radio" name="gender">
+        
+                <label for="">Female:</label>
+                <input type="radio" name="gender">
+            </fieldset>
+            <fieldset>
+                <label for="">Email:</label>
+                <input type="email" required>
+            </fieldset>
+            <fieldset>
+                <label for="">Phone:</label>
+                <input type="text" pattern="\+77\d{10}">
+            </fieldset>
+            <fieldset>
+                <label for="">Agree with our rules?</label>
+                <input type="checkbox">
+            </fieldset>
+            <fieldset>
+                <label for="">City:</label>
+                <select name="" id="">
+                    <option value="0">Choose city</option>
+                    <option value="1">Almaty</option>
+                    <option value="2">Astana</option>
+                    <option value="3">Shymkent</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="">Bio:</label>
+                <textarea name="" id="" cols="30" rows="10">
+        
+                </textarea>
+            </fieldset>
+            <fieldset>
+                <label for="">Upload your CV:</label>
+                <input type="file">
+            </fieldset>
+
+            <fieldset>
+                <input type="color">
+                <input type="date">
+                <input type="time">
+                <input type="datetime-local">
+                <input type="range" min="0" max="100" step="10">
+                <input type="number">
+                <input type="url" required>
+                
+            </fieldset>
+            
+            <fieldset>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+                <!-- <button>Register</button> -->
+            </fieldset>
+            
+        </form>
+    </div>
+
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+</html>

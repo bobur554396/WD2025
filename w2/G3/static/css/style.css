@@ -1,0 +1,36 @@
+.desc1.text2 {
+    color:blue;
+}
+
+img:hover {
+    border: solid 2px rgb(255, 255, 0);
+    cursor: pointer;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: blue;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.abs {
+    top: 100px;
+    left: 100px;
+    padding: 30px;;
+    position: absolute;
+    background: yellow;
+}

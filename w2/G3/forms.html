@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms page</title>
+</head>
+<body>
+
+    <div id="header">
+    </div> 
+    <header>
+
+    </header>
+
+    <a href="index.html">Go Back</a>
+    <h1>Register form</h1>
+
+    <form action="">
+        <fieldset>
+            <label for="">Username:</label>
+            <input 
+            type="text" 
+            placeholder="Enter your username"
+            required
+            >
+        </fieldset>
+        <fieldset>
+            <label for="">Password:</label>
+            <input type="password">
+        </fieldset>
+        <fieldset>
+            <label for="">Email:</label>
+            <input type="email"
+            required>
+        </fieldset>
+        <fieldset>
+            <label for="">Phone:</label>
+            <input 
+            type="tel"
+            pattern="\+77\d{9}"
+            >
+        </fieldset>
+        <fieldset>
+            <label for="">Gender:</label>
+            <label for="">Male:</label>
+            <input type="radio" name="gender">
+            <label for="">Female:</label>
+            <input type="radio" name="gender">
+        </fieldset>
+        <fieldset>
+            <label for="">Agree with out rule?</label>
+            <input type="checkbox">
+        </fieldset>
+        <fieldset>
+            <label for="">City:</label>
+            <select name="" id="">
+                <option value="0">Choose your city</option>
+                <option value="1">Almaty</option>
+                <option value="2">Astana</option>
+                <option value="3">Shymkent</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="">Bio:</label>
+            <textarea 
+            name="" id="" cols="30" rows="10">
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <input type="color">
+            <input type="date">
+            <input type="time">
+            <input type="datetime-local">
+            <input type="range" min="0" max="100" step="10">
+            <input type="number">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Register" disabled>
+            <input type="reset">
+        </fieldset>
+    </form>
+
+    <footer>
+        
+    </footer>
+
+    
+</body>
+</html>
