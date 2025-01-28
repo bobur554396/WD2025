@@ -1,0 +1,12 @@
+console.log(typeof 10);
+console.log(typeof 10.6);
+console.log(typeof '3');
+console.log(typeof "3");
+console.log(typeof "hello");
+console.log(typeof true);
+console.log(typeof null);
+console.log(typeof undefined);
+console.log(typeof [1, 2, 'hello', true]);
+console.log(typeof {a: 1, b: {c: 2}});
+console.log(typeof Symbol('¥'));
+console.log(typeof function(){});

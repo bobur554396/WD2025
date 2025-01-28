@@ -1,0 +1,10 @@
+console.log(typeof 5);
+console.log(typeof 5.5);
+console.log(typeof 'h');
+console.log(typeof 'hello');
+console.log(typeof "hello");
+console.log(typeof true);
+console.log(typeof [1, 2, 'hi', {a: 2}]);
+console.log(typeof {a: 1, b: 2});
+console.log(typeof Symbol('ß'));
+console.log(typeof function(){});
