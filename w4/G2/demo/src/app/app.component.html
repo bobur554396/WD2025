@@ -1,0 +1,11 @@
+<h1>Hello {{ title }}!</h1>
+
+<ul>
+  <li *ngFor="let num of numbers">
+    {{ num }}
+  </li>
+</ul>
+
+<p *ngIf="isOk">{{message}}</p>
+
+<button (click)="btnClicked()">Click btn</button>
