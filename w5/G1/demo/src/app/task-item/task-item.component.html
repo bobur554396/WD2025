@@ -1,0 +1,9 @@
+<input type="checkbox" [(ngModel)]="task.isCompleted">
+
+<!--<span [class.done-tasks]="task.isCompleted">{{task.id}} - {{task.name}}</span>-->
+<span
+  [ngClass]="task.isCompleted ? 'done-tasks' : ''">
+  {{task.id}} - {{task.name}}
+</span>
+
+<button (click)="itemRemove(task.id)">remove</button>

@@ -1,0 +1,21 @@
+<fieldset>
+  <label for="task-input">Enter your task: </label>
+  <input type="text"
+         id="task-input"
+         [(ngModel)]="currentTask.name">
+  <button (click)="addTask()">Add Task</button>
+</fieldset>
+
+<ul>
+  <li *ngFor="let t of newTasks">
+    <app-task-item
+      [task]="t"
+      (remove)="onTaskItemRemoved($event)"
+    ></app-task-item>
+  </li>
+</ul>
+
+<!-- Nested components: Parent/Child -->
+<!-- [] - Input: Sending data from parent to the child -->
+<!-- () - Output: Sending "event" from child to parent -->
+

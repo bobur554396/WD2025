@@ -1,0 +1,11 @@
+<fieldset>
+  <label for="">Enter your task description: </label>
+  <input type="text" [(ngModel)]="display">
+  <button (click)="addTask()">Add task</button>
+</fieldset>
+
+<ul>
+  <li *ngFor="let task of newTasks">
+    {{task}}
+  </li>
+</ul>

@@ -1,0 +1,18 @@
+<fieldset>
+  <label for="display">Enter your task: </label>
+  <input type="text" id="display" [(ngModel)]="currentTask">
+  <button (click)="addTask()">Add Task</button>
+</fieldset>
+
+<h3>New tasks</h3>
+<ul *ngIf="newTasks.length; else empty_list;">
+  <li *ngFor="let t of newTasks">
+    {{ t }}
+  </li>
+</ul>
+
+<ng-template #empty_list>
+  <p>List is empty</p>
+</ng-template>
+
+<!--<p *ngIf="newTasks.length === 0">List is empty</p>-->
