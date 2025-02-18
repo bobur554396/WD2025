@@ -1,0 +1,10 @@
+<ul *ngIf="loaded; else loadingBlock">
+  <li *ngFor="let post of posts">
+    <a [routerLink]="['/posts', post.id]">{{post.id}} - {{post.title}}</a>
+  </li>
+</ul>
+
+
+<ng-template #loadingBlock>
+  Posts are loading...
+</ng-template>
