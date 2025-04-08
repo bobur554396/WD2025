@@ -1,0 +1,38 @@
+<h1>App Root Component!</h1>
+
+<ng-container *ngIf="logged">
+  <button (click)="logout()">Logout</button>
+  <ul>
+    <li>
+      <a [routerLink]="['home']">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['about']">About</a>
+    </li>
+    <li>
+      <a [routerLink]="['posts']">Posts</a>
+    </li>
+    <li>
+      <a [routerLink]="['categories']">Categories</a>
+    </li>
+  </ul>
+
+  <!--Dynamic loading components based on Route-->
+  <router-outlet/>
+
+</ng-container>
+
+
+<ng-container *ngIf="!logged">
+  <h3>Login from</h3>
+  <fieldset>
+    <label for="username">Username: </label>
+    <input type="text" id="username"
+           [(ngModel)]="username"> <br/>
+    <label for="password">Password: </label>
+    <input type="password" id="password"
+           [(ngModel)]="password"> <br/>
+    <button (click)="login()">Login</button>
+  </fieldset>
+</ng-container>
+
